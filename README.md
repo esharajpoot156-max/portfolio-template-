@@ -2,7 +2,7 @@
 
 A responsive, modern developer portfolio showcasing my projects, tech stack, and contact details.
 
-🔗 **Live Demo:** [your-live-url-here](https://your-live-url-here)
+🔗 **Live Demo:** https://portfolio-template-eta-seven.vercel.app/
 
 ## Features
 
