@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en", data-theme= "dark">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width initial-scale = 1.0"/>
+    <meta name="description" content="Esha Ayaz-full stack portfolio"/>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav-container" aria-label="Main navigation">
+                <a href="#home" class="nav__logo" >Esha<span>.dev</span></a>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link" >Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__action">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                     <span class="theme-toggle__icon" id="theme-icon">🌙</span>
+                </button>
+            </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero section" id="home">
+        <div class="hero__container container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hi, I'm</p>
+          <h1 class="hero__title">Esha Ayyaz</h1>
+          <h2 class="hero__subtitle">Full-Stack <span class="typed" id="typed-text">MERN Developer</span></h2>
+          <p class="hero__description">
+            I build fast, clean and scalable web applications with React, Node.js, Express and MongoDB.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="assets/Esha_Ayyaz_Resume.pdf" class="btn btn--outline" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/profile.jpg" alt="Esha Ayyaz" class="hero__avatar" />
+        </div>
+      </div>
+            </section>
+        <section class="about section" id="about">
+            <div class="container"></div>
+            <h2 class="section__title">About Me</h2>
+            <p class="section__subtitle">A title about who I'm </p>
+            <div class="about__grid">
+                <div class="about__text">
+                    <p>I'm Esha, a <strong> Stack Web Developer </strong>from Lahore, 
+                        passionate about building modern, responsive, and user-friendly web applications.
+                        I'm studying <strong>BS Information Technology </strong>
+                         My core focus is MERN stack development, where I work with React.js, Node.js, Express.js, 
+                         and MongoDB to build complete web solutions from frontend to backend.</p>
+                    <p>
+                        Alongside MERN, I work with HTML, CSS, JavaScript, and Tailwind CSS to
+                        create clean and responsive interfaces. I also have experience with Python,
+                        C, C++, and SQL, and can develop basic projects using these technologies. </p>
+                        <p>
+                            I enjoy building projects that solve real-world problems and give me
+                             hands-on experience across different parts of web development. 
+                             I’ve worked on projects such as platforms, vendor management systems,
+                            job portals, authentication systems, chat features, notifications, 
+                            payment integration, admin dashboards, and activity logs.
+                    </p>
+                </div>
+                <div class="about__cards">
+                    <article class="info-card">
+                          <h3>Education</h3>
+                          <p>BS Information Technology</p>
+                          <span>University of the Punjab 2022 – 2026</span>
+                    </article>
+                    <article class="info-card">
+                        <h3>Experience</h3>
+                        <p>Full Stack web Developer</p>
+                        <span>Teyzix Core Software House june-july 2026</span>
+                    </article>
+                    <article class="info-card">
+                        <h3>Location</h3>
+                        <p>Lahore, Pakistan</p>
+                        <span>Open to remote &amp; on-site</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <div class="container">
+                 <h2 class="section__title">Tech Stack</h2>
+                 <p class="section__subtitle">Tools I use to build things</p>
+                 <div class="skills__grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul class="skill-tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <ul class="skill-tags">
+              <li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>JWT Auth</li><li>Nodemailer</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Database</h3>
+            <ul class="skill-tags">
+              <li>MongoDB</li><li>Mongoose</li><li>SQL</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <ul class="skill-tags">
+              <li>Git</li><li>GitHub</li><li>Postman</li><li>VS Code</li><li>Vercel</li><li>Render</li><li>Figma</li><li>Canva</li>
+            </ul>
+          </article>
+        </div>
+            </div>
+        </section>
+         <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Featured Projects</h2>
+        <p class="section__subtitle">Click a card to see details</p>
+
+        <div class="projects__grid">
+          <article class="project-card" data-project="teyzix-market" tabindex="0" role="button">
+            <div class="project-card__thumb">🛒</div>
+            <div class="project-card__body">
+              <h3>Teyzix Market</h3>
+              <p>Multi-vendor service marketplace.</p>
+              <div class="project-card__links">
+                <a href="https://teyzix-market.vercel.app" target="_blank" rel="noopener">🔗 Live</a>
+            </div>
+              <ul class="skill-tags"><li>MERN</li><li>JWT</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="vendor-quotation" tabindex="0" role="button">
+            <div class="project-card__thumb">📄</div>
+            <div class="project-card__body">
+              <h3>Vendor Quotation System</h3>
+              <p>Vendor management and quotation workflow.</p>
+              <div class="project-card__links">
+      <a href="https://vendor-hub-cyan.vercel.app/" target="_blank" rel="noopener">🔗 Live</a>
+    </div>
+              <ul class="skill-tags"><li>MERN</li><li>REST API</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="sp-market" tabindex="0" role="button">
+            <div class="project-card__thumb">🏪</div>
+            <div class="project-card__body">
+              <h3>Sp.market</h3>
+              <p>Combined product + service marketplace.</p>
+              <div class="project-card__links">
+      <a href="https://sp-market-iota.vercel.app/" target="_blank" rel="noopener">🔗 Live</a>
+    </div>
+              <ul class="skill-tags"><li>React</li><li>Node</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="job-portal" tabindex="0" role="button">
+            <div class="project-card__thumb">💼</div>
+            <div class="project-card__body">
+              <h3>Job Portal</h3>
+              <p>Jobs, companies and applications platform.</p>
+              <div class="project-card__links">
+      <a href="https://job-portal-rose-theta.vercel.app" target="_blank" rel="noopener">🔗 Live</a>
+    </div>
+              <ul class="skill-tags"><li>MERN</li><li>Auth</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="converter" tabindex="0" role="button">
+            <div class="project-card__thumb">🔄</div>
+            <div class="project-card__body">
+              <h3>Word ⇄ PDF Converter</h3>
+              <p>Desktop app to convert Word and PDF files.</p>
+              <div class="project-card__links">
+      <a href="https://github.com/esharajpoot156-max/Converter-word-to-pdf-pdf-to-word.git" target="_blank" rel="noopener">💻 Code</a>
+    </div>
+              <ul class="skill-tags"><li>Python</li><li>Flask</li><li>Flet</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="section__subtitle">Let's build something together</p>
+
+        <div class="contact__grid">
+          <div class="contact__links">
+            <a href="mailto:your-esharajpoot156@gmail.com" class="contact__item">✉️ esharajpoot156@gmail.com</a>
+            <a href="https://github.com/esharajpoot156-max" target="_blank" rel="noopener" class="contact__item">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/esha-ayyaz-80933435b/" target="_blank" rel="noopener" class="contact__item">💼 LinkedIn</a>
+          </div>
+
+          <form class="contact__form" id="contact-form">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Esha Ayyaz. All rights reserved.</p>
+  </footer>
+
+  <div class="modal" id="project-modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" data-close aria-label="Close modal">&times;</button>
+      <div class="modal__thumb" id="modal-thumb"></div>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <ul class="skill-tags" id="modal-tech"></ul>
+      <div class="modal__links">
+        <a href="#" id="modal-live" class="btn btn--primary" target="_blank" rel="noopener">Live Demo</a>
+        <a href="#" id="modal-code" class="btn btn--outline" target="_blank" rel="noopener">Source Code</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+
+        </main>
+
+    </body>
+</html>
